@@ -52,6 +52,15 @@
 -(instancetype)initWithFrame:(CGRect)frame
                     renderer:(id<HSClusterRenderer>)renderer;
 
+/**
+ * Initializes an instance of HSClusterMapView with a specified coder and HSClusterRenderer.
+ * @param aDecoder - the decoder of the HSClusterMapView
+ * @param renderer - the HSClusterRenderer to use for rendering cluster marker images
+ * @return an instance of HSClusterMapView
+ */
+-(instancetype)initWithCoder:(NSCoder)aDecoder
+                    renderer:(id<HSClusterRenderer>)renderer;
+
 
 /**
  * Updates the map's state by running the clustering algorithm. 
