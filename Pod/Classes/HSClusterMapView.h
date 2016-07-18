@@ -58,7 +58,7 @@
  * @param renderer - the HSClusterRenderer to use for rendering cluster marker images
  * @return an instance of HSClusterMapView
  */
--(instancetype)initWithCoder:(NSCoder)aDecoder
+-(instancetype)initWithCoder:(NSCoder *)aDecoder
                     renderer:(id<HSClusterRenderer>)renderer;
 
 
