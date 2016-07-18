@@ -49,6 +49,15 @@
     return self;
 }
 
+-(instancetype)initWithCoder:(NSCoder *)aDecoder
+                               renderer:(id<HSClusterRenderer>)renderer {
+  if (self = [super initWithCoder:aDecoder]) {
+    self.renderer = renderer;
+    [self sharedInit];
+  }
+  return self;
+}
+
 -(instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         [self sharedInit];
